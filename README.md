@@ -1,5 +1,4 @@
 # convert mp3 track numbers in any imaginable order (to eliminate the stupidity of hardware mp3 player vendors)
-a collection of 
 ## mp3revtracktag.py
 This Python script recusively looks for .mp3 files in all subdirectories. Once it found one, that has not been modified by this script yet (indicated by a special message in the comments tag) it reverses the ID3 tag of the track number.
 
@@ -18,9 +17,13 @@ The scripts require [eyeD3](http://eyed3.readthedocs.io/en/latest/), install it 
 
 ### virtualenv:
 `python3 -m venv venv`
+
 `. venv/bin/activate`
+
 `pip install eyed3`
+
 run scripts
+
 `deactivate`
 
 In the root directory of all files to be edited run: `python3 /path/to/mp3revtracktag.py` or `python3 /path/to/mp3tracktotitle.py`. 
